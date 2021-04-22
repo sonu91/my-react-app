@@ -43,8 +43,7 @@ class App extends React.Component {
      */
     componentDidMount() {
 
-        fetch('http://10.215.241.161:8087/api/project') /* http://10.215.241.161:81/angapp/     http://10.215.241.161:8087/api/project*/
-
+        fetch('http://10.215.241.161:8087/api/project') 
             .then(res => res.json())
             .then(json => {
                 this.setState({
@@ -67,7 +66,7 @@ class App extends React.Component {
         const { isLoaded, items } = this.state;
 
         if (!isLoaded)
-            return <div>Loading Trek Project Details...</div>;
+            return <div>Loading Trek Project Details.Plz wt for..</div>;
 
         return (
             <div className="App">
